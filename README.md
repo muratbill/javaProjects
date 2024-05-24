@@ -1,4 +1,4 @@
 # javaProjects
 
-## Odev No:6
+## Odev No:5 Ders 6
 maasHesaplama sinifi eklendi
