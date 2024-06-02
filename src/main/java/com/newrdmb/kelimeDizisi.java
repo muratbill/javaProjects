@@ -29,7 +29,7 @@ public class kelimeDizisi {
         StringBuilder birlestir = new StringBuilder();
         for (String element : result) {
             if (element.length() % 2 == 0) {
-                String partial = element.substring(0, element.length()/2); // Extract first three characters
+                String partial = element.substring(0, element.length()/2);
                 birlestir.append(partial);
             } else {
                 String partial = element.substring(0, (element.length()/2) + 1);
