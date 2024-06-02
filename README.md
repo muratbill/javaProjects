@@ -4,4 +4,4 @@
 maasHesaplama sinifi eklendi
 
 ## Odev No:6 Ders 8
-kelimeDizisi.java sinifi olustruldu. Personel.java altindaki main method icerisinden cagrildi.
+kelimeler adli bir package olusturuldu. kelimeDizisi java sinifi bu package altinda olustruldu. duplicateChars sinifi main methodu iceriyor oradan kelimeDizisi cagrildi
