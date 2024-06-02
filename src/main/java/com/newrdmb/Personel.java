@@ -85,8 +85,8 @@ public class Personel {
 //        } else {
 //            mh1.gelir(gun);
 //        }
-       kelimeDizisi kelimeObj = new kelimeDizisi();
-       kelimeObj.kelimeTuretme();
+      // kelimeDizisi kelimeObj = new kelimeDizisi();
+       //kelimeObj.kelimeTuretme();
     }
 
 }

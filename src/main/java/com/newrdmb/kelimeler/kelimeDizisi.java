@@ -1,4 +1,4 @@
-package com.newrdmb;
+package com.newrdmb.kelimeler;
 import java.util.*;
 public class kelimeDizisi {
     void kelimeTuretme(){
