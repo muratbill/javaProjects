@@ -13,18 +13,5 @@ public class maasHesaplama {
 
     }
 
-    public static void main(String[] args) {
-        System.out.println("Lutfen calisilan gun sayisini giriniz: ");
-        int gun = input.nextInt();
 
-        maasHesaplama mh1 = new maasHesaplama();
-        mh1.katsayi = 1500;
-
-        if (gun < 0) {
-            System.out.println("Gun sayisi negatif olamaz");
-        } else {
-            mh1.gelir(gun);
-        }
-
-    }
 }
