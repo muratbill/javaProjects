@@ -4,4 +4,4 @@
 maasHesaplama sinifi eklendi
 
 ## Odev No:6 Ders 8
-kelimeDizisi.java sinivi olustruldu. Personel.java icersindeki main methodtan cagrildi.
+kelimeDizisi.java sinifi olustruldu. Personel.java altindaki main method icerisinden cagrildi.
