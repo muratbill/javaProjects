@@ -10,12 +10,12 @@ public class Planets {
 
             System.out.println(gez);
         }
-        Gezegenler enbuyuk = Gezegenler.Jupiter;
-        System.out.println("En buyuk gezegen: " + enbuyuk + ' ' +  Gezegenler.Jupiter.getRadius() + " kilometredir.");
-        Gezegenler enuzak = Gezegenler.Neptune;
-        System.out.println("En uzak gezegen: " + enuzak + ' ' +  Gezegenler.Neptune.getDistanceFromSun() + " milyon kilometredir.");
-        Gezegenler speed = Gezegenler.Jupiter;
-        System.out.println("Gunes etrafinda En yuksek donus hizi: " + speed + ' ' +  Gezegenler.Jupiter.getRotationSpeed() + " ssatdir.");
+        Gezegenler enbuyuk = Gezegenler.JUPITER;
+        System.out.println("En buyuk gezegen: " + enbuyuk + ' ' +  Gezegenler.JUPITER.getRadius() + " kilometredir.");
+        Gezegenler enuzak = Gezegenler.NEPTUNE;
+        System.out.println("En uzak gezegen: " + enuzak + ' ' +  Gezegenler.NEPTUNE.getDistanceFromSun() + " milyon kilometredir.");
+        Gezegenler speed = Gezegenler.JUPITER;
+        System.out.println("Gunes etrafinda En yuksek donus hizi: " + speed + ' ' +  Gezegenler.JUPITER.getRotationSpeed() + " ssatdir.");
         Gezegenler[] planets = Gezegenler.values();
         Arrays.sort(planets, Comparator.comparingDouble(Gezegenler::getDistanceFromSun).reversed());
         System.out.println("------------------------------------------------------------");
