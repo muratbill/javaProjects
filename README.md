@@ -8,3 +8,6 @@ kelimeler adli bir package olusturuldu. kelimeDizisi java sinifi bu package alti
 
 ## Odev No:7 Ders 10
 Gezegenler Enum data tipleri olusturuldu.
+
+## Odev No:8 Ders 11
+Department, Main, Personel, PersonelList, TeamLead ve Todo siniflari ders11.odev8 paketi icine eklenmistir.
