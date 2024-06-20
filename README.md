@@ -11,3 +11,6 @@ Gezegenler Enum data tipleri olusturuldu.
 
 ## Odev No:8 Ders 11
 Department, Main, Personel, PersonelList, TeamLead ve Todo siniflari ders11.odev8 paketi icine eklenmistir.
+
+## Odev No:9 Ders 12
+URLCheck.java ve Main class ders12.odev9 paketi altina eklenmistir.
