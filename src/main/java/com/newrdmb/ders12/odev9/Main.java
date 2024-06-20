@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Duzgun calisan URL
-        String testURL = "https://www.google.com";
+        //String testURL = "https://www.google.com";
 
         //Malformed URL test
         //String testURL = "http0://example99.com";
@@ -16,7 +16,7 @@ public class Main {
         //String testURL = "http://example99.com";
 
         //Hatali URL veya yanit yok icin test
-        //String testURL = "https://www.amazon.com/error";
+        String testURL = "https://www.amazon.com/error";
 
         try {
             URLCheck.validateURL(testURL);
