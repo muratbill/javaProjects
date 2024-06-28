@@ -14,3 +14,6 @@ Department, Main, Personel, PersonelList, TeamLead ve Todo siniflari ders11.odev
 
 ## Odev No:9 Ders 12
 URLCheck.java ve Main class ders12.odev9 paketi altina eklenmistir.
+
+## Odev No:10 Ders 14
+FarkliDegerler ve Main sinif ders14.odev10 paketi altina eklenmistir.
