@@ -12,8 +12,8 @@ public class FarkliDegerler<T> {
        this.deger = deger;
    }
 
-    public void addElement(T deger) {
-        mylist.add(deger);
+    public void addElement(T sayi) {
+        mylist.add(sayi);
     }
    public T getDeger(){
        return deger;
