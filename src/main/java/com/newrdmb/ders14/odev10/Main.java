@@ -1,6 +1,8 @@
 package com.newrdmb.ders14.odev10;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,8 +42,15 @@ public class Main {
         }
 
         scanner.close();
-        integerList.stream()
-                .map(num -> num % 2 == 0 ? num : -1)
-                .forEach(System.out::println);
+        List<Integer> filteredList = integerList.stream()
+                .filter(num -> num == 2)
+                .collect(Collectors.toList());
+
+        if (filteredList.isEmpty()) {
+            System.out.println(-1);
+        } else {
+            filteredList.forEach(System.out::println);
+        }
+
     }
 }
