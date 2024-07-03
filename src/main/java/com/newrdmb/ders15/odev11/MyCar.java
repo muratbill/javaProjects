@@ -13,21 +13,7 @@ public class MyCar {
         engineType = myCarBuilder.engineType;
         color = myCarBuilder.color;
     }
-    public String getMake(){
-        return make;
-    }
-    public String getModel(){
-        return model;
-    }
-    public int getYear(){
-        return year;
-    }
-    public String getEngineType(){
-        return engineType;
-    }
-    public String getColor(){
-        return color;
-    }
+
 
     @Override
     public String toString() {
