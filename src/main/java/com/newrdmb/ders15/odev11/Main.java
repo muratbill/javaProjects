@@ -6,13 +6,13 @@ public class Main {
         instance.myMessage();
 
         System.out.println("Builder ornekleri: *****************");
-        MyCar arabam = new MyCar.MyCarBuilder("Citroen")
+        MyCar arabam = MyCar.builder("Citroen")
                 .model("C3").year(2024).color("Red")
                 .engineType("Electric").build();
-        System.out.println("Birinci araba: " + arabam);
+        System.out.println(STR."Birinci araba: \{arabam}");
 
-        MyCar arabam2 = new MyCar.MyCarBuilder("Renault").model("Symbool").build();
-        System.out.println("Ikinci araba: " + arabam2);
+        MyCar arabam2 = MyCar.builder("Renault").model("Symbool").build();
+        System.out.println(STR."Ikinci araba: \{arabam2}");
 
 
     }

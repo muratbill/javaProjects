@@ -1,33 +1,29 @@
 package com.newrdmb.ders15.odev11;
 
 public class MyCar {
-    private String make;
-    private String model;
-    private int year;
-    private String engineType;
-    private String color;
+     final  String make;
+    final  String model;
+    final  int year;
+    final  String engineType;
+    final  String color;
     private MyCar(MyCarBuilder myCarBuilder){
-        make = myCarBuilder.make;
-        model = myCarBuilder.model;
-        year = myCarBuilder.year;
-        engineType = myCarBuilder.engineType;
-        color = myCarBuilder.color;
+        this.make = myCarBuilder.make;
+        this.model = myCarBuilder.model;
+        this.year = myCarBuilder.year;
+        this.engineType = myCarBuilder.engineType;
+        this.color = myCarBuilder.color;
     }
 
 
     @Override
     public String toString() {
-        return "Car{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                ", color='" + color + '\'' +
-                ", engineType='" + engineType + '\'' +
-
-                '}';
+        return STR."Car{make='\{make}\{'\''}, model='\{model}\{'\''}, year=\{year}, color='\{color}\{'\''}, engineType='\{engineType}\{'\''}\{'}'}";
+    }
+    public static MyCarBuilder builder(String make) {
+        return new MyCarBuilder(make);
     }
     public static  class MyCarBuilder {
-        private String make;
+        private final String make;
         private String model;
         private int year;
         private String engineType;
