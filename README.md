@@ -20,3 +20,6 @@ FarkliDegerler ve Main sinif ders14.odev10 paketi altina eklenmistir.
 
 ## Odev No:11 Ders 15
 MyCar , MySingleton ve Main siniflari ders15.odev11 paketi altina eklenmistir.
+
+## Odev No:12 Ders 17
+JDBC ve JDBI icin iki ayri paket olusturulup temel CRUD islemleri gerceklestirilmistir.
