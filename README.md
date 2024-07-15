@@ -23,3 +23,6 @@ MyCar , MySingleton ve Main siniflari ders15.odev11 paketi altina eklenmistir.
 
 ## Odev No:12 Ders 17
 JDBC ve JDBI icin iki ayri paket olusturulup temel CRUD islemleri gerceklestirilmistir.
+
+##Odev No:13 Ders 18
+Maas Hesaplama MaasHesaplamaTest ve MaasHesaplamaDP test siniflari ile birlikte derlendi.
