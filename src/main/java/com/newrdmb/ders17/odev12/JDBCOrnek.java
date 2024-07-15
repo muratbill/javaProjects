@@ -5,15 +5,19 @@ import java.sql.SQLException;
 public class JDBCOrnek {
     private static JDBCOrnek instance = null;
     private  Connection connection;
-    private final String url = "jdbc:postgresql://127.0.0.1:5432/personel";
-    private final String username = "postgres";
-    private final String password = "1qaz2wsx@";
+   // private final String url = "jdbc:postgresql://127.0.0.1:5432/personel";
 
+    private final String url = "jdbc:mysql://127.0.0.1:3306/personel";
+    //private final String username = "postgres";
+    private final String username = "root";
+
+    //private final String password = "1qaz2wsx@";
+     private final String password= "123456qazW";
     private JDBCOrnek(){
         try {
             connection = DriverManager.getConnection(url, username, password);
             if (connection != null) {
-                System.out.println("Connected to Postgresql!");
+                System.out.println("Connected to Mysql!");
 
 
             }

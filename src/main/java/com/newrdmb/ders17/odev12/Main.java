@@ -10,16 +10,19 @@ public class Main {
             System.err.println("Failed to establish connection. Exiting.");
             return;
         }
-        DBOperations dboper = new DBOperations(conn);
+     //   DBOperations dboper = new DBOperations(conn);
+        MySQLOperations dboper = new MySQLOperations(conn);
+
         try {
-     //  dboper.insertData("John Wayne", "Engineer", 43, "Engineering", 1234);
-       // dboper.insertData( "Emma Watson", "Accountant", 43, "Finance", 1235);
-      //  dboper.insertData("Mehmet Can", "Project Manager", 45, "R&D", 1236);
-       //dboper.insertData("Ken West", "Security", 35, "Security", 1237);
-                  dboper.updateData("Emily Wests","Nurse",null,"Medic",1237);
+       dboper.insertData("John Wayne", "Engineer", 43, "Engineering", 1234);
+        dboper.insertData( "Emma Watson", "Accountant", 43, "Finance", 1235);
+        dboper.insertData("Mehmet Can", "Project Manager", 45, "R&D", 1236);
+       dboper.insertData("Ken West", "Security", 35, "Security", 1237);
+                 dboper.updateData("Emily Wests","Nurse",null,"Medic",1237);
             //      dboper.deleteData(conn,1237);
-            dboper.fetchData();
+           dboper.fetchData();
      //       dboper.deleteData(1237);
+      //      dboper.createTable(conn);
         }finally {
             dboper.closeConnection();
         }
