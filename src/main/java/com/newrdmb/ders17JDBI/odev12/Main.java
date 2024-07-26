@@ -19,8 +19,9 @@ public class Main {
 //        dbops.insertData("Emma Watson","Accountant",43,"Finance",1235);
 //        dbops.insertData("Mehmet Can","Project manager",45,"R&D",1236);
 //        dbops.insertData("Tim Burton","Security",24,"Security",1237);
-       dbops.updateData("Tim Cooking",null,null,null,1237);
+//          dbops.updateData("Tim Cooking",null,null,null,1237);
 
+        dbops.deleteData(1237);
         List<Map<String, Object>> dataBySicilNo = dbops.fetchDataBySicilNo(1237);
         for (Map<String, Object> row : dataBySicilNo) {
             System.out.println(STR."Isim: \{row.get("adsoyad")}");
@@ -29,7 +30,7 @@ public class Main {
             System.out.println(STR."Bolum: \{row.get("bolum")}");
             System.out.println(STR."Sicil No: \{row.get("sicilno")}");
         }
-//     dbops.deleteData(1237);
+
 
     }
 }

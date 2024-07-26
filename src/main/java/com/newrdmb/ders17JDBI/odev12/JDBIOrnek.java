@@ -9,10 +9,12 @@ import java.sql.SQLException;
 public class JDBIOrnek {
     private static JDBIOrnek instance = null;
     private Jdbi jdbi;
-    private final String url = "jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7719424";
-    private final String username = "sql7719424";
-    private final String password = "D9PnkZmuP3";
-
+    //private final String url = "jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7719424";
+    //private final String username = "sql7719424";
+    //private final String password = "D9PnkZmuP3";
+    private final String url = "jdbc:postgresql://127.0.0.1:5432/personel";
+    private final String username = "postgres";
+    private final String password = "1qaz2wsx@";
     private JDBIOrnek() {
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
