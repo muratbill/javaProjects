@@ -29,3 +29,6 @@ Maas Hesaplama MaasHesaplamaTest ve MaasHesaplamaDP test siniflari ile birlikte 
 
 ## Odev No:14 Ders 20
 DemoTest ve DemoAddRecordTest adli iki test sinifi eklenmistir.
+
+## Odev No:15 Ders 21
+selentests paketi altinda Ode15ElementsTest ve Odev15WebtablesTest siniflari eklendi.
