@@ -36,7 +36,8 @@ public class Odev15ElementsTest {
         driver.get("https://demoqa.com/elements");
         WebElement buttons = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Buttons')]")));
         buttons.click();
-        WebElement btnClick = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[3]/button[1]")));
+
+        WebElement btnClick = driver.findElement(By.xpath("//*[text()=\"Click Me\"]"));
         btnClick.click();
         WebElement resultMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='dynamicClickMessage']")));
         Assert.assertTrue(resultMessage.isDisplayed(), "Result message is not displayed.");
