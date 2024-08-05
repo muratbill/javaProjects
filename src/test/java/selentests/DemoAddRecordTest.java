@@ -35,12 +35,12 @@ public class DemoAddRecordTest {
         driver.get("https://demoqa.com/webtables");
         WebElement addButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.btn-primary#addNewRecordButton")));
         addButton.click();
-        WebElement firstNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(1) input")));
-        WebElement lastNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(2) input")));
-        WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(3) input")));
-        WebElement ageField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(4) input")));
-        WebElement salaryField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(5) input")));
-        WebElement departmentField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(6) input")));
+        WebElement firstNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#firstName")));
+        WebElement lastNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#lastName")));
+        WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#userEmail")));
+        WebElement ageField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#age")));
+        WebElement salaryField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#salary")));
+        WebElement departmentField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#department")));
         WebElement submitButton = driver.findElement(By.cssSelector("form#userForm button[type='submit']"));
         String firstName = "Ahmet";
         String lastName = "Can";
@@ -100,8 +100,7 @@ public class DemoAddRecordTest {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", lastRowEditButton);
         WebElement firstNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input#firstName")));
         WebElement lastNameField = driver.findElement(By.cssSelector("input#lastName"));
-        //WebElement emailField = driver.findElement(By.cssSelector("input#userEmail"));
-        WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form#userForm > div:nth-child(3) input")));
+        WebElement emailField = driver.findElement(By.cssSelector("input#userEmail"));
         WebElement ageField = driver.findElement(By.cssSelector("input#age"));
         WebElement salaryField = driver.findElement(By.cssSelector("input#salary"));
         WebElement departmentField = driver.findElement(By.cssSelector("input#department"));
