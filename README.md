@@ -32,3 +32,6 @@ DemoTest ve DemoAddRecordTest adli iki test sinifi eklenmistir.
 
 ## Odev No:15 Ders 21
 selentests paketi altinda Ode15ElementsTest ve Odev15WebtablesTest siniflari eklendi.
+
+## Odev No:18 Ders 25
+ders25.odev18 paketleri test ve root klasor altina eklendi.
